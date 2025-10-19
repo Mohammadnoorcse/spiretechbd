@@ -136,6 +136,65 @@
 
     </section>
     {{-- about section end --}}
+
+    {{-- choose section start --}}
+    <section class="w-full py-6">
+        <div class="container mx-auto px-4 flex flex-col gap-3">
+            <span class="text-base font-bold text-[#531954]">Why Choose us</span>
+            <h2 class="text-4xl font-bold ">We Provide the Best Solution within Short time</h2>
+            <p class="text-[#6d6d6d]">With Spire Technology, explore the tranquility, well-being, and health benefits of our premium quality services & products. Our natural formulations are crafted with care and precision to complement your daily grind, offering effective relief for stress, anxiety and discomfort, all while restoring balance to your day to day. Envision the calming comfort of our full-spectrum oils or the delectable flavors of our gummy supplements—each taste and droplet filled with nature’s vitality.</p>
+            <p class="text-[#6d6d6d] my-4">With Spire Technology, explore the tranquility, well-being, and health benefits of our premium quality services & products. Our natural formulations are crafted with care and precision to complement your daily grind, offering effective relief for stress, anxiety and discomfort, all while restoring balance to your day to day. Envision the calming comfort of our full-spectrum oils or the delectable flavors of our gummy supplements—each taste and droplet filled with nature’s vitality.</p>
+            <p class="text-[#6d6d6d]">With Spire Technology, explore the tranquility, well-being, and health benefits of our premium quality services & products. Our natural formulations are crafted with care and precision to complement your daily grind, offering effective relief for stress, anxiety and discomfort, all while restoring balance to your day to day. Envision the calming comfort of our full-spectrum oils or the delectable flavors of our gummy supplements—each taste and droplet filled with nature’s vitality.</p>
+
+        </div>
+
+    </section>
+    {{-- choose section end --}}
+
+    {{-- mission and vision start --}}
+    <section class="w-full py-[5rem] bg-[#531954]">
+        <div class="container mx-auto px-4 flex lg:flex-row flex-col gap-[2rem]">
+            <div class="lg:w-1/2 w-full ">
+                <img src="{{ asset('assets/image1-about.png') }}" alt="Logo" class="">
+            </div>
+            <div class="lg:w-1/2 w-full bg-[url('/assets/bg-art-6.png')] bg-no-repeat bg-cover bg-center ">
+                <span class="text-base font-bold text-white">What We Want To DO</span>
+                <h2 class="text-5xl font-bold text-white mt-1">Our Vision</h2>
+                <p class="text-base text-white mt-[2rem]">Our organization is built on a vision of global impact, breaking down geographical barriers. Our goal is to establish ourselves as a reliable name in the tech world, known for providing innovative solutions to real-world problems.</p>
+                
+                <h2 class="text-5xl font-bold text-white my-[2rem]">Our Mission</h2>
+                <p class="text-base text-white mt-[2rem]">We know our mission: to use our unique and flexible methods, we try to make people’s lives simpler, more productive and more fulfilling. Through our services, products, or platforms, we are committed to</p>
+
+                <ul class="list-disc list-inside space-y-2 mt-4 text-white">
+                    <li>Delivering seamless and reliable digital solutions.</li>
+                    <li>Making it affordable and accessible for everyone</li>
+                    <li>Developing trust with customers and partners and driving sustainable growth with them.</li>
+                </ul>
+            
+            </div>
+
+
+        </div>
+    </section>
+    {{-- mission and vision end --}}
+
+    {{-- service section start --}}
+    <section class="w-full py-[2rem]">
+        <div class="container mx-auto px-4">
+            <span class="text-base font-bold text-[#531954]">our service</span>
+            <h2 class="text-4xl font-bold mt-4">Our Offer for your Business Growth</h2>
+            <p class="mt-4 text-[#414141]">From unparalleled solutions to innovative products, our offering caters to the diverse needs of the industry. We believe that leveraging technology to solve complex problems is not enough— that we need to provide users with an unparalleled experience, be it through software solutions, or digital platforms; that not only deliver efficiencies but are easy to use as well. Below are some of the key areas that we cater for:</p>
+            <ul class="list-disc list-inside space-y-2 mt-4 text-[#414141]">
+                <li>Digital Services</li>
+                <li>ConsumerTech & Enterprise Products</li>
+                <li>Expert Consulting</li>
+                <li>E-Commerce Solutions</li>
+            </ul>
+
+        </div>
+
+    </section>
+    {{-- service section start --}}
 @endsection
 
 
