@@ -146,7 +146,7 @@
 
                 <a href="{{ route('home') }}"
                     class="{{ request()->routeIs('project') ? $activeClass : '' }} {{ $linkClass }}">Projects</a>
-                <a href="{{ route('home') }}"
+                <a href="{{ route('contact') }}"
                     class="{{ request()->routeIs('contact') ? $activeClass : '' }} {{ $linkClass }}">Contacts</a>
             </div>
             {{-- right --}}
@@ -306,7 +306,7 @@
                     class="{{ request()->routeIs('project') ? $activeMobileClass : '' }} {{ $linkMobileClass }}">Projects</a>
 
                 {{-- Contacts --}}
-                <a href="{{ route('home') }}"
+                <a href="{{ route('contact') }}"
                     class="{{ request()->routeIs('contact') ? $activeMobileClass : '' }} {{ $linkMobileClass }}">Contacts</a>
             </div>
 
