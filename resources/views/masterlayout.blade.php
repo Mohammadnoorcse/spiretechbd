@@ -95,7 +95,7 @@
             <div class="lg:flex hidden items-center gap-6">
                 <a href="{{ route('home') }}"
                     class="{{ request()->routeIs('home') ? $activeClass : '' }} {{ $linkClass }}">Home</a>
-                <a href="{{ route('home') }}"
+                <a href="{{ route('about') }}"
                     class="{{ request()->routeIs('about') ? $activeClass : '' }} {{ $linkClass }}">About us</a>
 
                 <!-- Services Dropdown -->
@@ -254,7 +254,7 @@
                     class="{{ request()->routeIs('home') ? $activeMobileClass : '' }} {{ $linkMobileClass }}">Home</a>
 
                 {{-- About --}}
-                <a href="{{ route('home') }}"
+                <a href="{{ route('about') }}"
                     class="{{ request()->routeIs('about') ? $activeMobileClass : '' }} {{ $linkMobileClass }}">About us</a>
 
                 {{-- Services Dropdown --}}
