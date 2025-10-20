@@ -489,7 +489,7 @@
 
     <section class="w-full py-[3rem]">
         <div class="container mx-auto px-4 flex flex-col gap-2 justify-center items-center">
-            <span class="text-base text-[#531954] font-medium">Our Team</span>
+            <span class="text-base text-[#531954] font-medium">our clients</span>
             <h2 class="text-center text-5xl font-bold ">We are Trusted<br />15+ Countries Worldwide</h2>
 
             <div class="mt-[3rem] w-full grid sm:grid-cols-2 gap-4">

@@ -1,5 +1,5 @@
 @extends('masterlayout')
-@section('title', 'about')
+@section('title', 'contact')
 
 @section('content')
   {{-- header section start --}}
@@ -55,8 +55,8 @@
                 <form action="" class="flex flex-col gap-3 mt-4">
                     <input type="text" class="bg-[#BF7A76] py-2 px-4 outline-none rounded-md text-white" placeholder="Your Name">
                     <input type="text" class="bg-[#BF7A76] py-2 px-4 outline-none rounded-md text-white" placeholder="Your Email">
-                    <textarea rows="8" type="text" class="bg-[#BF7A76] py-2 px-4 outline-none rounded-md text-white" placeholder="Your Email"> </textarea>
-                    <button class="py-2 bg-[#F26822] text-white rounded-md">Send Message</button>
+                    <textarea rows="8" type="text" class="bg-[#BF7A76] py-2 px-4 outline-none rounded-md text-white" placeholder="Message..."> </textarea>
+                    <button class="py-2 bg-[#F26822] hover:bg-[#82334C] text-white rounded-md cursor-pointer">Send Message</button>
 
                 </form>
 
