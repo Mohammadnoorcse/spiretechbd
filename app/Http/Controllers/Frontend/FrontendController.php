@@ -23,4 +23,16 @@ class FrontendController extends Controller
     public function web(){
         return view('web');
     }
+    public function mobile(){
+        return view('mobile');
+    }
+    public function ecommercesolution(){
+        return view('ecommerce-solution');
+    }
+    public function fooddelivery(){
+        return view('Food-delivery');
+    }
+    public function possoftware(){
+        return view('pos-software');
+    }
 }

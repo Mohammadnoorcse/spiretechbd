@@ -109,16 +109,16 @@
                         <a href="{{ route('web') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:translate-x-2 hover:text-[#F26822] transition duration-200">Web
                             Development</a>
-                        <a href="#"
+                        <a href="{{ route('web') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:translate-x-2 hover:text-[#F26822] transition duration-200">Software
                             Development</a>
-                        <a href="#"
+                        <a href="{{ route('mobile') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:translate-x-2 hover:text-[#F26822] transition duration-200">Mobile
                             App Development</a>
-                        <a href="#"
+                        <a href="{{ route('web') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:translate-x-2 hover:text-[#F26822] transition duration-200">E-commerce
                             Services</a>
-                        <a href="#"
+                        <a href="{{ route('web') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:translate-x-2 hover:text-[#F26822] transition duration-200">Digital
                             Marketing</a>
                     </div>
@@ -132,13 +132,13 @@
                     </span>
                     <div
                         class="absolute top-[1.7rem] left-1/2 transform -translate-x-1/2 z-10 w-[15rem] bg-white p-4 shadow-md rounded hidden group-hover:flex flex-col gap-2 transition duration-200">
-                        <a href="#"
+                        <a href="{{ route('ecommercesolution') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase   hover:text-[#F26822] hover:translate-x-2 transition duration-200">E-commerce
                             Solution</a>
-                        <a href="#"
+                        <a href="{{ route('fooddelivery') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase   hover:text-[#F26822] hover:translate-x-2 transition duration-200">Food
                             Delivery App</a>
-                        <a href="#"
+                        <a href="{{ route('possoftware') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase   hover:text-[#F26822] hover:translate-x-2 transition duration-200">POS
                             Software</a>
                     </div>
@@ -267,16 +267,16 @@
                         <a href="{{ route('web') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:text-[#F26822] hover:translate-x-2 transition duration-200">Web
                             Development</a>
-                        <a href="#"
+                        <a href="{{ route('web') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:text-[#F26822] hover:translate-x-2 transition duration-200">Software
                             Development</a>
-                        <a href="#"
+                        <a href="{{ route('mobile') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:text-[#F26822] hover:translate-x-2 transition duration-200">Mobile
                             App Development</a>
-                        <a href="#"
+                        <a href="{{ route('web') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:text-[#F26822] hover:translate-x-2 transition duration-200">E-commerce
                             Services</a>
-                        <a href="#"
+                        <a href="{{ route('web') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:text-[#F26822] hover:translate-x-2 transition duration-200">Digital
                             Marketing</a>
                     </div>
@@ -289,13 +289,13 @@
                         <i class="fa-solid fa-caret-down"></i>
                     </span>
                     <div class="hidden group-hover:flex flex-col gap-4 mt-4 ml-4 transition duration-300">
-                        <a href="#"
+                        <a href="{{ route('ecommercesolution') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:text-[#F26822] hover:translate-x-2 transition duration-200">E-commerce
                             Solution</a>
-                        <a href="#"
+                        <a href="{{ route('fooddelivery') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:text-[#F26822] hover:translate-x-2 transition duration-200">Food
                             Delivery App</a>
-                        <a href="#"
+                        <a href="{{ route('possoftware') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:text-[#F26822] hover:translate-x-2 transition duration-200">POS
                             Software</a>
                     </div>

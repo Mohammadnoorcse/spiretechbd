@@ -1,5 +1,5 @@
 @extends('masterlayout')
-@section('title', 'web')
+@section('title', 'Web Development')
 
 @section('content')
 
