@@ -583,6 +583,108 @@
                         part...always solving problems with great original ideas!"
                     </p>
                 </div>
+                {{-- Card 2 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-1.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
+                            <p class="text-[#9f9f9f]">CEO of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
+                {{-- Card 3 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-3.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
+                            <p class="text-[#9f9f9f]">CEO of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
+                {{-- Card 4 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-4.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Anwar Travels & Tours</span>
+                            <p class="text-[#9f9f9f]">Client of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
+                {{-- Card 5 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-5.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
+                            <p class="text-[#9f9f9f]">CEO of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
+                {{-- Card 6 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-6.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
+                            <p class="text-[#9f9f9f]">CEO of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
+                {{-- Card 7 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-1.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
+                            <p class="text-[#9f9f9f]">CEO of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
             </div>
         </div>
     </section>

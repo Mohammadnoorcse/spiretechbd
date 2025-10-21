@@ -361,7 +361,7 @@
 
                 <form action="" class="w-full flex items-center">
                     <input type="text" placeholder="Email" class="w-[80%] py-2 px-4 bg-[#FFFFFF] rounded-l-md outline-none ">
-                    <button class="w-[20%] bg-[#F26822] py-2 rounded-r-md text-white cursor-pointer"><i class="fa-solid fa-paper-plane"></i></button>
+                    <button class="w-[20%] bg-[#F26822] py-3 rounded-r-md text-white cursor-pointer"><i class="fa-solid fa-paper-plane"></i></button>
                 </form>
                 
 
