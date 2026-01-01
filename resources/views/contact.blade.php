@@ -22,7 +22,7 @@
                     <span class="text-[#EF6623] text-3xl"><i class="fa-solid fa-earth-americas"></i></span>
                     <div class="flex flex-col gap-2">
                         <h2 class="text-base font-bold">Our Address:</h2>
-                        <p class="text-[#7A7A7A]">87, BNS Center, Dhaka-Mymensing Highway, Sector: 07, Uttara, Dhaka, Bangladesh</p>
+                        <p class="text-[#7A7A7A]">House: 51,Road: 12, Sector: 10, Uttara-1230, Dhaka, Bangladesh</p>
 
                     </div>
 
@@ -52,18 +52,62 @@
                 <h2 class="text-4xl font-bold text-white">Ready to Get Started?</h2>
                 <p class="text-white mt-1">Your email address will not be published. Required fields are marked *</p>
 
-                <form action="" class="flex flex-col gap-3 mt-4">
-                    <input type="text" class="bg-[#BF7A76] py-2 px-4 outline-none rounded-md text-white" placeholder="Your Name">
-                    <input type="text" class="bg-[#BF7A76] py-2 px-4 outline-none rounded-md text-white" placeholder="Your Email">
-                    <textarea rows="8" type="text" class="bg-[#BF7A76] py-2 px-4 outline-none rounded-md text-white" placeholder="Message..."> </textarea>
-                    <button class="py-2 bg-[#F26822] hover:bg-[#82334C] text-white rounded-md cursor-pointer">Send Message</button>
+               <form id="whatsappForm" class="flex flex-col gap-3 mt-4">
+                        <input id="name" type="text" required
+                            class="bg-[#BF7A76] py-2 px-4 outline-none rounded-md text-white"
+                            placeholder="Your Name">
 
+                        <input id="email" type="email" required
+                            class="bg-[#BF7A76] py-2 px-4 outline-none rounded-md text-white"
+                            placeholder="Your Email">
+
+                        <textarea id="message" rows="8" required
+                            class="bg-[#BF7A76] py-2 px-4 outline-none rounded-md text-white"
+                            placeholder="Message..."></textarea>
+
+                        <button type="submit"
+                            class="py-2 bg-[#F26822] hover:bg-[#82334C] text-white rounded-md cursor-pointer">
+                            Send Message
+                        </button>
                 </form>
+
 
             </div>
 
         </div>
 
     </section>
-    
+
 @endsection
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("whatsappForm");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+
+        let whatsappNumber = "8801611536353"; // no +, no space
+
+        let text =
+            `*New Contact Message*%0A%0A` +
+            `*Name:* ${encodeURIComponent(name)}%0A` +
+            `*Email:* ${encodeURIComponent(email)}%0A` +
+            `*Message:* ${encodeURIComponent(message)}`;
+
+        let url = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+        window.open(url, "_blank");
+    });
+
+});
+</script>
+
+

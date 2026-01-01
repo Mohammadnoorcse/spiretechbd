@@ -60,9 +60,9 @@
     <section class="w-full bg-[#531954] ">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <a href="#" class="py-2 px-2 border-l border-[#FFFFFF33] text-white text-sm"><i
+                <a href="https://www.facebook.com/spiretechnology" target="_blank" class="py-2 px-2 border-l border-[#FFFFFF33] text-white text-sm"><i
                         class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="py-2 px-2 border-l border-[#FFFFFF33] text-white text-sm"><i
+                <a href="https://www.instagram.com/spiretec" target="_blank" class="py-2 px-2 border-l border-[#FFFFFF33] text-white text-sm"><i
                         class="fa-brands fa-instagram"></i></a>
                 <a href="#" class="py-2 px-2 border-l border-[#FFFFFF33] text-white text-sm"><i
                         class="fa-brands fa-x-twitter"></i></a>
@@ -216,7 +216,7 @@
                 <div class="mt-2 flex flex-col gap-2">
                     <div class="flex gap-1">
                         <i class="fa-solid fa-location-dot mt-1"></i>
-                        <p>87, BNS Center, Dhaka-Mymensing Highway, Sector: 07, Uttara, Dhaka, Bangladesh</p>
+                        <p>House: 51,Road: 12, Sector: 10, Uttara 1230, Dhaka, Bangladesh</p>
 
                     </div>
                     <div class="flex gap-1">
@@ -232,8 +232,8 @@
                 </div>
 
                 <div class="mt-4 flex items-center gap-4">
-                    <a href="#" class=" text-xl"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="text-xl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/spiretechnology" target="_blank" class=" text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/spiretec" class="text-xl"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" class=" text-xl"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#" class="text-xl"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
@@ -330,29 +330,29 @@
         <div class="container mx-auto px-4 grid md:grid-cols-4 grid-cols-2 gap-4">
             <div class="flex flex-col gap-2">
                 <h2 class="text-xl font-bold text-white mb-2">Services</h2>
-                <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Web Development</a>
-                <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Software Development </a>
-                <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Mobile Development </a>
-                <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">E-commerce Services</a>
-                <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Digital Marketing</a>
-                
+                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Web Development</a>
+                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Software Development </a>
+                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Mobile Development </a>
+                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">E-commerce Services</a>
+                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Digital Marketing</a>
+
 
             </div>
             <div class="flex flex-col gap-2">
                 <h2 class="text-xl font-bold text-white mb-2">Products</h2>
-                <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">E-commerce Solution</a>
-                <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Food Delivery App </a>
-                <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">POS Software</a>
-                
-                
+                <a href="{{ route('ecommercesolution') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">E-commerce Solution</a>
+                <a href="{{ route('fooddelivery') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Food Delivery App </a>
+                <a href="{{ route('possoftware') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">POS Software</a>
+
+
 
             </div>
             <div class="flex flex-col gap-2">
                 <h2 class="text-xl font-bold text-white mb-2">Company</h2>
-                <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">About Company</a>
+                <a href="{{ route('about') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">About Company</a>
                 <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Blog & News </a>
-                
-                
+
+
 
             </div>
             <div class="flex flex-col gap-2">
@@ -363,7 +363,7 @@
                     <input type="text" placeholder="Email" class="w-[80%] py-2 px-4 bg-[#FFFFFF] rounded-l-md outline-none ">
                     <button class="w-[20%] bg-[#F26822] py-3 rounded-r-md text-white cursor-pointer"><i class="fa-solid fa-paper-plane"></i></button>
                 </form>
-                
+
 
             </div>
 

@@ -118,7 +118,7 @@
 
     </section>
 
-    <section class="w-full lg:h-[53rem] bg-[#531954] py-8 lg:pb-0 pb-[5rem] relative">
+    <section id="counterSection" class="w-full lg:h-[53rem] bg-[#531954] py-8 lg:pb-0 pb-[5rem] relative">
         <div class="container mx-auto px-4 ">
             <div class="flex flex-col gap-2 justify-center items-center">
                 <span class="text-white">Why Choose Us</span>
@@ -265,7 +265,7 @@
                 <div class="lg:w-1/2 w-full lg:h-auto h-[15rem] relative">
                     <img src="{{ asset('assets/count-bg-1.jpg') }}" alt="bg" class="w-full h-full">
                     <div class="absolute top-7 left-5 flex flex-col">
-                        <h1 class="text-[4rem] font-bold text-white">15+</h1>
+                        <h1 class="text-5xl font-bold text-[#F26822] counter" data-count="15">0</h1>
                         <h3 class="text-3xl font-bold text-white">Countries Worldwide</h3>
                         <p class="pr-2 text-white">To succeed, every software solution must be deeply integrated into the
                             existing tech environment..</p>
@@ -275,7 +275,7 @@
                 <div class="lg:w-1/2 w-full lg:h-auto h-[15rem] relative">
                     <img src="{{ asset('assets/count-bg-2.jpg') }}" alt="bg" class="w-full h-full">
                     <div class="absolute top-7 left-5 flex flex-col">
-                        <h1 class="text-[4rem] font-bold text-white">23 k</h1>
+                        <h1 class="text-5xl font-bold text-[#F26822] counter" data-count="2500">0</h1>
                         <h3 class="text-3xl font-bold text-white">Happy Customers</h3>
                         <p class="pr-2 text-white">To succeed, every software solution must be deeply integrated into the
                             existing tech environment..</p>
@@ -393,9 +393,9 @@
 
             </div>
             </div>
-            
 
-            
+
+
 
         </div>
 
@@ -785,3 +785,52 @@
 
     });
 </script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const section = document.getElementById("counterSection");
+    const counters = document.querySelectorAll(".counter");
+
+    let hasRun = false;
+
+    const startCount = () => {
+        counters.forEach(counter => {
+            const target = Number(counter.dataset.count);
+            let count = 0;
+            const speed = target / 80;
+
+            const update = () => {
+                count += speed;
+                if (count < target) {
+                    counter.innerText = Math.floor(count);
+                    requestAnimationFrame(update);
+                } else {
+                    counter.innerText = target + "+";
+                }
+            };
+
+            update();
+        });
+    };
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !hasRun) {
+                    hasRun = true;
+                    startCount();
+                    observer.disconnect(); // stop observing
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
+
+    observer.observe(section);
+
+});
+</script>
+
