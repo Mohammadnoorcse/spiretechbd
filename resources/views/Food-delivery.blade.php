@@ -1,5 +1,5 @@
 @extends('masterlayout')
-@section('title', 'Mobile App Development')
+@section('title', 'Spire Technology Limited-Mobile App Development')
 
 @push('css')
     <style>
@@ -140,7 +140,7 @@
             <div class="w-full h-full bg-[#F8F8F8] flex flex-col gap-4 justify-center items-center p-4 order-2">
                <div class="w-[60%]">
                 <h1 class="text-5xl font-bold text-[#F26822]">15+</h1>
-              
+
                 <h3 class="text-3xl font-bold mt-2">Countries Worldwide</h3>
                 <p class="mt-4 text-[#333] leading-8">To succeed, every software solution must be deeply integrated into the existing tech environment...</p>
                </div>

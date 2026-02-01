@@ -4,29 +4,11 @@
 
 @section('content')
 
+
+
     {{-- <section class="w-full">
-        <div class="relative">
-            <img src="{{ asset('assets/SP-1.jpg') }}" alt="" class="w-full ">
-            <div class="container mx-auto px-4 absolute sm:top-[10rem] top-[5rem]  flex flex-col sm:gap-4 gap-2">
-                <p class="sm:text-base text-[12px] font-medium text-white animate__animated animate__backInDown">Simplifying
-                    Complexity, One Solution at a Time</p>
-                <h2 class="sm:text-5xl text-base font-bold text-white animate__animated animate__fadeInDown">Spire Technology
-                </h2>
-                <p class="sm:text-base text-[12px] font-medium text-white animate__animated animate__fadeInDown">We offer
-                    high quality technical services & It Products, digital<br>
-                    transformation for business excellence, driving innovation in business <br>
-                    development and give the best solution.</p>
-                <button class="w-[8rem] px-2 py-1 bg-[#BF552E] text-white rounded animate__animated animate__flipInX">Learn
-                    More</button>
-
-            </div>
-        </div>
-
-    </section> --}}
-
-    <section class="w-full">
         <div class="owl-carousel owl-theme">
-            {{-- Slide 1 --}}
+
             <div class="relative">
                 <img src="{{ asset('assets/SP-1.jpg') }}" alt="" class="w-full">
                 <div class="container mx-auto px-4 absolute sm:top-[10rem] top-[5rem] flex flex-col sm:gap-4 gap-2">
@@ -47,7 +29,7 @@
                 </div>
             </div>
 
-            {{-- Slide 2 (Example) --}}
+
             <div class="relative">
                 <img src="{{ asset('assets/SP-2.jpg') }}" alt="" class="w-full">
                 <div class="container mx-auto px-4 absolute sm:top-[10rem] top-[5rem] flex flex-col sm:gap-4 gap-2">
@@ -67,33 +49,49 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
-    <section class="w-full bg-[#F8F8F8]">
-        <div class="container mx-auto px-4 grid md:grid-cols-4 grid-cols-2 gap-4 py-8">
-            <div class="flex justify-center items-center">
-                <img src="{{ asset('assets/bussiness.png') }}" alt="Logo"
-                    class="opacity-50 hover:opacity-100 h-16 cursor-pointer">
-            </div>
-            <div class="flex justify-center items-center">
-                <img src="{{ asset('assets/bussiness-1.png') }}" alt="Logo"
-                    class="opacity-50 hover:opacity-100 h-16 cursor-pointer">
-            </div>
-            <div class="flex justify-center items-center">
-                <img src="{{ asset('assets/bussiness-2.png') }}" alt="Logo"
-                    class="opacity-50 hover:opacity-100 h-16 cursor-pointer">
-            </div>
-            <div class="flex justify-center items-center">
-                <img src="{{ asset('assets/bussiness-3.png') }}" alt="Logo"
-                    class="opacity-50 hover:opacity-100 h-16 cursor-pointer">
-            </div>
+    <section class="w-full bg-[#5F4C60]">
+        <div class="container mx-auto px-4 py-4 border border-red-100 flex gap-4">
 
+            <div class="w-1/2 border border-red-500">
+                <h2>Simplifying Complexity, One Solution at a Time<span></span></h2>
+
+            </div>
+            <div class="w-1/2 border border-red-500">
+
+            </div>
 
 
         </div>
 
     </section>
+
+
+    <section class="w-full bg-[#F8F8F8]">
+        <div class="container mx-auto px-4 py-8">
+            <div class="owl-carousel logo-carousel">
+                <div class="flex justify-center items-center">
+                    <img src="{{ asset('assets/bussiness.png') }}" alt="Logo"
+                        class="opacity-50 hover:opacity-100 h-16 cursor-pointer">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="{{ asset('assets/bussiness-1.png') }}" alt="Logo"
+                        class="opacity-50 hover:opacity-100 h-16 cursor-pointer">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="{{ asset('assets/bussiness-2.png') }}" alt="Logo"
+                        class="opacity-50 hover:opacity-100 h-16 cursor-pointer">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="{{ asset('assets/bussiness-3.png') }}" alt="Logo"
+                        class="opacity-50 hover:opacity-100 h-16 cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="w-full">
         <div class="container mx-auto px-4 flex lg:flex-row flex-col gap-4 py-8">
@@ -119,7 +117,7 @@
 
     </section>
 
-    <section class="w-full lg:h-[53rem] bg-[#531954] py-8 lg:pb-0 pb-[5rem] relative">
+    <section id="counterSection" class="w-full lg:h-[53rem] bg-[#531954] py-8 lg:pb-0 pb-[5rem] relative">
         <div class="container mx-auto px-4 ">
             <div class="flex flex-col gap-2 justify-center items-center">
                 <span class="text-white">Why Choose Us</span>
@@ -266,7 +264,7 @@
                 <div class="lg:w-1/2 w-full lg:h-auto h-[15rem] relative">
                     <img src="{{ asset('assets/count-bg-1.jpg') }}" alt="bg" class="w-full h-full">
                     <div class="absolute top-7 left-5 flex flex-col">
-                        <h1 class="text-[4rem] font-bold text-white">15+</h1>
+                        <h1 class="text-5xl font-bold text-[#F26822] counter" data-count="15">0</h1>
                         <h3 class="text-3xl font-bold text-white">Countries Worldwide</h3>
                         <p class="pr-2 text-white">To succeed, every software solution must be deeply integrated into the
                             existing tech environment..</p>
@@ -276,7 +274,7 @@
                 <div class="lg:w-1/2 w-full lg:h-auto h-[15rem] relative">
                     <img src="{{ asset('assets/count-bg-2.jpg') }}" alt="bg" class="w-full h-full">
                     <div class="absolute top-7 left-5 flex flex-col">
-                        <h1 class="text-[4rem] font-bold text-white">23 k</h1>
+                        <h1 class="text-5xl font-bold text-[#F26822] counter" data-count="2500">0</h1>
                         <h3 class="text-3xl font-bold text-white">Happy Customers</h3>
                         <p class="pr-2 text-white">To succeed, every software solution must be deeply integrated into the
                             existing tech environment..</p>
@@ -381,17 +379,22 @@
     {{-- our touch --}}
     <section class="w-full py-[2rem]">
         <div class="container mx-auto px-4 relative ">
-            <img src="{{ asset('assets/bg-tech-home1.jpg') }}" alt="Logo" class="">
+            <div class="w-full relative">
+                <img src="{{ asset('assets/bg-tech-home1.jpg') }}" alt="Logo" class="">
 
-            <div class="absolute sm:top-[5rem] top-5 sm:left-[5rem] left-5 ">
+                <div class="w-[90%] absolute sm:top-[5rem] top-5 sm:left-[5rem] left-5 ">
                 <span class="text-[20px] font-medium text-white">Get in Touch</span>
 
-                <div class="w-full flex justify-between items-center">
+                <div class="w-full flex lg:flex-row flex-col justify-between lg:items-center ">
                     <h2 class="sm:text-5xl text-2xl font-bold text-white">Let’s Build Your Website</h2>
-                    {{-- <div class="px-4 py-2 border border-white">Contact Us</div> --}}
+                    <a href="{{ route('contact') }}" class="px-4 py-2 border-2  border-white text-white font-bold lg:block hidden ">Contact Us</a>
                 </div>
 
             </div>
+            </div>
+
+
+
 
         </div>
 
@@ -417,10 +420,40 @@
             </div>
 
 
-            <div class="mt-8 grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
+            <div class="mt-8 owl-carousel project-carousel">
 
                 <div class="relative group">
                     <img src="{{ asset('assets/project-1.jpg') }}" alt="Logo" class="">
+
+                    <div
+                        class="absolute bottom-[2rem] w-[90%] bg-[#531954] p-4 left-1/2 transform -translate-x-1/2 relative">
+                        <h2 class="text-xl text-white font-bold z-50">E-Commerce Solution</h2>
+                        <span class="text-[#aeaacb]">Ideas / Technology</span>
+
+                        <div
+                            class="absolute top-0 right-0 w-[3rem] h-[3rem] rounded-bl-full bg-[#6B537C] z-5 flex justify-center items-center text-[#C55642] group-hover:bg-[#C55642] group-hover:text-white">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="{{ asset('assets/project-2.jpg') }}" alt="Logo" class="">
+
+                    <div
+                        class="absolute bottom-[2rem] w-[90%] bg-[#531954] p-4 left-1/2 transform -translate-x-1/2 relative">
+                        <h2 class="text-xl text-white font-bold z-50">E-Commerce For Trenzy</h2>
+                        <span class="text-[#aeaacb]">Design / Ideas</span>
+
+                        <div
+                            class="absolute top-0 right-0 w-[3rem] h-[3rem] rounded-bl-full bg-[#6B537C] z-5 flex justify-center items-center text-[#C55642] group-hover:bg-[#C55642] group-hover:text-white">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="{{ asset('assets/project-3.jpg') }}" alt="Logo" class="">
 
                     <div
                         class="absolute bottom-[2rem] w-[90%] bg-[#531954] p-4 left-1/2 transform -translate-x-1/2 relative">
@@ -435,11 +468,11 @@
                     </div>
                 </div>
                 <div class="relative group">
-                    <img src="{{ asset('assets/project-1.jpg') }}" alt="Logo" class="">
+                    <img src="{{ asset('assets/project-4.jpg') }}" alt="Logo" class="">
 
                     <div
                         class="absolute bottom-[2rem] w-[90%] bg-[#531954] p-4 left-1/2 transform -translate-x-1/2 relative">
-                        <h2 class="text-xl text-white font-bold z-50">Buzfi Website</h2>
+                        <h2 class="text-xl text-white font-bold z-50">Basics Project</h2>
                         <span class="text-[#aeaacb]">Ideas / Technology</span>
 
                         <div
@@ -450,26 +483,11 @@
                     </div>
                 </div>
                 <div class="relative group">
-                    <img src="{{ asset('assets/project-1.jpg') }}" alt="Logo" class="">
+                    <img src="{{ asset('assets/project-5.jpg') }}" alt="Logo" class="">
 
                     <div
                         class="absolute bottom-[2rem] w-[90%] bg-[#531954] p-4 left-1/2 transform -translate-x-1/2 relative">
-                        <h2 class="text-xl text-white font-bold z-50">Buzfi Website</h2>
-                        <span class="text-[#aeaacb]">Ideas / Technology</span>
-
-                        <div
-                            class="absolute top-0 right-0 w-[3rem] h-[3rem] rounded-bl-full bg-[#6B537C] z-5 flex justify-center items-center text-[#C55642] group-hover:bg-[#C55642] group-hover:text-white">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="relative group">
-                    <img src="{{ asset('assets/project-1.jpg') }}" alt="Logo" class="">
-
-                    <div
-                        class="absolute bottom-[2rem] w-[90%] bg-[#531954] p-4 left-1/2 transform -translate-x-1/2 relative">
-                        <h2 class="text-xl text-white font-bold z-50">Buzfi Website</h2>
+                        <h2 class="text-xl text-white font-bold z-50">E-Commerce Website</h2>
                         <span class="text-[#aeaacb]">Ideas / Technology</span>
 
                         <div
@@ -487,101 +505,189 @@
     </section>
 
     {{-- team --}}
-
-    <section class="relative w-full  bg-[url('/assets/bg-tech-home1.jpg')] bg-cover bg-center py-[3rem]">
+    <section class="relative w-full bg-[url('/assets/bg-tech-home1.jpg')] bg-cover bg-center py-[3rem]">
         <div class="absolute inset-0 bg-[#473354] opacity-70"></div>
 
-        <div class="w-full h-full relative z-10 container mx-auto px-4 flex flex-col gap-2 justify-center items-center">
+        <div class="w-full relative z-10 container mx-auto px-4 flex flex-col gap-2 justify-center items-center">
             <span class="text-base text-white font-medium">Our Team</span>
             <h2 class="text-center text-5xl font-bold text-white">We Provide Services for<br />Your Online Business Growth
             </h2>
 
             <div class="mt-[3rem] w-full grid md:grid-cols-4 grid-cols-2 gap-4">
-
                 <div
                     class="w-full p-[2rem] border border-white rounded-md hover:bg-[#BE532F] flex flex-col gap-2 justify-center items-center">
                     <img src="{{ asset('assets/team-1.png') }}" alt="team" class="w-[5rem]">
                     <span class="text-xl font-bold text-white uppercase">CEO</span>
-
-
                 </div>
                 <div
                     class="w-full p-[2rem] border border-white rounded-md hover:bg-[#BE532F] flex flex-col gap-2 justify-center items-center">
                     <img src="{{ asset('assets/team-4.png') }}" alt="team" class="w-[5rem]">
                     <span class="text-xl font-bold text-white uppercase">Web developer</span>
-
-
                 </div>
                 <div
                     class="w-full p-[2rem] border border-white rounded-md hover:bg-[#BE532F] flex flex-col gap-2 justify-center items-center">
                     <img src="{{ asset('assets/team-3.png') }}" alt="team" class="w-[5rem]">
                     <span class="text-xl font-bold text-white uppercase">App Developer</span>
-
-
                 </div>
                 <div
                     class="w-full p-[2rem] border border-white rounded-md hover:bg-[#BE532F] flex flex-col gap-2 justify-center items-center">
                     <img src="{{ asset('assets/team-2.png') }}" alt="team" class="w-[5rem]">
                     <span class="text-xl font-bold text-white uppercase">Digital Marketer</span>
-
-
                 </div>
             </div>
-
         </div>
     </section>
+
 
     {{-- our client --}}
 
     <section class="w-full py-[3rem]">
         <div class="container mx-auto px-4 flex flex-col gap-2 justify-center items-center">
             <span class="text-base text-[#531954] font-medium">our clients</span>
-            <h2 class="text-center text-5xl font-bold ">We are Trusted<br />15+ Countries Worldwide</h2>
+            <h2 class="text-center text-5xl font-bold">We are Trusted<br />15+ Countries Worldwide</h2>
 
-            <div class="mt-[3rem] w-full grid sm:grid-cols-2 gap-4">
-                {{-- card --}}
-                <div class="w-full p-[2rem] shadow-md rounded">
+            <div class="mt-[3rem] w-full owl-carousel testimonial-carousel">
+                {{-- Card 1 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
                     <div class="flex gap-4">
-                        <img src="{{ asset('assets/client-2.png') }}" alt="team" class="w-[5rem]">
-                        <div class="flex flex-col ">
+                        <div>
+                            <img src="{{ asset('assets/client-2.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
                             <span class="text-[20px] font-bold mb-[2px]">Buzfi</span>
                             <p class="text-[#9f9f9f]">COO of Buzfi.com</p>
-
                         </div>
-
                     </div>
-
                     <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
                         "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
                         Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
-                        part...always solving problems with great original ideas!." </p>
-
+                        part...always solving problems with great original ideas!"
+                    </p>
                 </div>
-                {{-- card --}}
-                <div class="w-full p-[2rem] shadow-md rounded">
+
+                {{-- Card 2 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
                     <div class="flex gap-4">
-                        <img src="{{ asset('assets/client-1.png') }}" alt="team" class="w-[5rem]">
-                        <div class="flex flex-col ">
+                         <div>
+                            <img src="{{ asset('assets/client-1.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
                             <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
                             <p class="text-[#9f9f9f]">CEO of Company</p>
-
                         </div>
-
                     </div>
-
                     <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
-
                         "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
                         Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
-                        part...always solving problems with great original ideas!." </p>
-
+                        part...always solving problems with great original ideas!"
+                    </p>
                 </div>
-
+                {{-- Card 2 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-1.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
+                            <p class="text-[#9f9f9f]">CEO of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
+                {{-- Card 3 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-3.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
+                            <p class="text-[#9f9f9f]">CEO of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
+                {{-- Card 4 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-4.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Anwar Travels & Tours</span>
+                            <p class="text-[#9f9f9f]">Client of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
+                {{-- Card 5 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-5.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
+                            <p class="text-[#9f9f9f]">CEO of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
+                {{-- Card 6 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-6.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
+                            <p class="text-[#9f9f9f]">CEO of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
+                {{-- Card 7 --}}
+                <div class="w-full p-[2rem] shadow-md rounded bg-white mx-2">
+                    <div class="flex gap-4">
+                         <div>
+                            <img src="{{ asset('assets/client-1.png') }}" alt="logo1" class="w-[60px] h-[60px] object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
+                            <p class="text-[#9f9f9f]">CEO of Company</p>
+                        </div>
+                    </div>
+                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
+                    </p>
+                </div>
             </div>
-
         </div>
-
     </section>
+
 
 
 
@@ -604,7 +710,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
     $(document).ready(function() {
-        $(".owl-carousel").owlCarousel({
+        // Hero slider (main)
+        $(".owl-carousel").first().owlCarousel({
             items: 1,
             loop: true,
             autoplay: true,
@@ -613,5 +720,116 @@
             dots: true,
             nav: false
         });
+
+        // Logo slider
+        $(".logo-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                640: {
+                    items: 3
+                },
+                1024: {
+                    items: 4
+                }
+            }
+        });
+
+        // Project showcase slider
+        $(".project-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            dots: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                640: {
+                    items: 2
+                },
+                1024: {
+                    items: 3
+                },
+                1280: {
+                    items: 4
+                }
+            }
+        });
+
+        // Testimonial slider
+        $(".testimonial-carousel").owlCarousel({
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            dots: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                }
+            }
+        });
+
     });
 </script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const section = document.getElementById("counterSection");
+    const counters = document.querySelectorAll(".counter");
+
+    let hasRun = false;
+
+    const startCount = () => {
+        counters.forEach(counter => {
+            const target = Number(counter.dataset.count);
+            let count = 0;
+            const speed = target / 80;
+
+            const update = () => {
+                count += speed;
+                if (count < target) {
+                    counter.innerText = Math.floor(count);
+                    requestAnimationFrame(update);
+                } else {
+                    counter.innerText = target + "+";
+                }
+            };
+
+            update();
+        });
+    };
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !hasRun) {
+                    hasRun = true;
+                    startCount();
+                    observer.disconnect(); // stop observing
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
+
+    observer.observe(section);
+
+});
+</script>
+

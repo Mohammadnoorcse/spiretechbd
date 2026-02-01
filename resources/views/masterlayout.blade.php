@@ -10,43 +10,61 @@
 
 
     <!-- Favicon -->
-    {{-- <link rel="shortcut icon" href="{{ asset($generalsetting->favicon) }}" type="image/x-icon" /> --}}
+    <link rel="shortcut icon" href="{{ asset('assets/logo.png') }}" type="image/x-icon" />
 
     <!-- SEO and Canonical -->
     <meta name="author" content="Super Ecommerce" />
     <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="facebook-domain-verification" content="38f1w8335btoklo88dyfl63ba3st2e" />
+    <!-- Meta SEO -->
+    <meta name="description"
+        content="Explore Spire Technology Limited's latest projects in design, development, and technology. Innovative solutions tailored for your business needs.">
+    <meta name="keywords"
+        content="Spire Technology, IT projects, software development, technology solutions, web design, app development">
+    <link rel="canonical" href="{{ url()->current() }}" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projects | Spire Technology Limited">
+    <meta property="og:description"
+        content="Explore Spire Technology Limited's latest projects in design, development, and technology.">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('assets/image-box1.jpg') }}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | Spire Technology Limited">
+    <meta name="twitter:description"
+        content="Explore Spire Technology Limited's latest projects in design, development, and technology.">
+    <meta name="twitter:image" content="{{ asset('assets/image-box1.jpg') }}">
     <!-- Tailwind  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font Awesome 6 -->
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
 
-     <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Stack for SEO and Page-specific CSS -->
-    @stack('seo')
+    {{-- @stack('seo') --}}
     @stack('css')
 
 
 </head>
 
 @php
-    $linkClass = 'text-base font-semibold border-b-2 border-transparent hover:border-[#F26822] hover:text-[#F26822] transition duration-300';
+    $linkClass =
+        'text-base font-semibold border-b-2 border-transparent hover:border-[#F26822] hover:text-[#F26822] transition duration-300';
     $activeClass = 'text-[#F26822] border-[#F26822]';
     $linkMobileClass = 'text-base font-semibold  hover:text-[#F26822] transition duration-300';
     $activeMobileClass = 'text-[#F26822]';
@@ -60,9 +78,11 @@
     <section class="w-full bg-[#531954] ">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <a href="https://www.facebook.com/spiretechnology" target="_blank" class="py-2 px-2 border-l border-[#FFFFFF33] text-white text-sm"><i
+                <a href="https://www.facebook.com/spiretechnology" target="_blank"
+                    class="py-2 px-2 border-l border-[#FFFFFF33] text-white text-sm"><i
                         class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/spiretec" target="_blank" class="py-2 px-2 border-l border-[#FFFFFF33] text-white text-sm"><i
+                <a href="https://www.instagram.com/spiretec" target="_blank"
+                    class="py-2 px-2 border-l border-[#FFFFFF33] text-white text-sm"><i
                         class="fa-brands fa-instagram"></i></a>
                 <a href="#" class="py-2 px-2 border-l border-[#FFFFFF33] text-white text-sm"><i
                         class="fa-brands fa-x-twitter"></i></a>
@@ -74,7 +94,7 @@
             <div class="flex items-center gap-4">
                 <div class="sm:flex hidden items-center gap-2 text-sm text-white border-r border-[#FFFFFF33] pr-2">
                     <span><i class="fa-solid fa-phone"></i></span>
-                    <span>+880 1611-536353</span>
+                    <span>+8801712-444267</span>
 
                 </div>
                 <div class="flex items-center gap-2 text-sm text-white  pl-2">
@@ -114,16 +134,16 @@
                         <a href="{{ route('web') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:translate-x-2 hover:text-[#F26822] transition duration-200">Web
                             Development</a>
-                        <a href="{{ route('web') }}"
+                        <a href="{{ route('softerware') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:translate-x-2 hover:text-[#F26822] transition duration-200">Software
                             Development</a>
                         <a href="{{ route('mobile') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:translate-x-2 hover:text-[#F26822] transition duration-200">Mobile
                             App Development</a>
-                        <a href="{{ route('web') }}"
+                        <a href="{{ route('ecommercesolution') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:translate-x-2 hover:text-[#F26822] transition duration-200">E-commerce
                             Services</a>
-                        <a href="{{ route('web') }}"
+                        <a href="{{ route('marketing') }}"
                             class="text-sm font-medium text-[#1a1b1e] uppercase hover:translate-x-2 hover:text-[#F26822] transition duration-200">Digital
                             Marketing</a>
                     </div>
@@ -226,14 +246,16 @@
                     </div>
                     <div class="flex gap-1">
                         <i class="fa-solid fa-phone mt-1"></i>
-                        <p>+880 1611-536353</p>
+                        <p>+8801712-444267</p>
 
                     </div>
                 </div>
 
                 <div class="mt-4 flex items-center gap-4">
-                    <a href="https://www.facebook.com/spiretechnology" target="_blank" class=" text-xl"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/spiretec" class="text-xl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/spiretechnology" target="_blank" class=" text-xl"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/spiretec" class="text-xl"><i
+                            class="fa-brands fa-instagram"></i></a>
                     <a href="#" class=" text-xl"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#" class="text-xl"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
@@ -260,7 +282,8 @@
 
                 {{-- About --}}
                 <a href="{{ route('about') }}"
-                    class="{{ request()->routeIs('about') ? $activeMobileClass : '' }} {{ $linkMobileClass }}">About us</a>
+                    class="{{ request()->routeIs('about') ? $activeMobileClass : '' }} {{ $linkMobileClass }}">About
+                    us</a>
 
                 {{-- Services Dropdown --}}
                 <div class="group">
@@ -330,26 +353,35 @@
         <div class="container mx-auto px-4 grid md:grid-cols-4 grid-cols-2 gap-4">
             <div class="flex flex-col gap-2">
                 <h2 class="text-xl font-bold text-white mb-2">Services</h2>
-                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Web Development</a>
-                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Software Development </a>
-                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Mobile Development </a>
-                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">E-commerce Services</a>
-                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Digital Marketing</a>
+                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Web
+                    Development</a>
+                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Software
+                    Development </a>
+                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Mobile
+                    Development </a>
+                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">E-commerce
+                    Services</a>
+                <a href="{{ route('web') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Digital
+                    Marketing</a>
 
 
             </div>
             <div class="flex flex-col gap-2">
                 <h2 class="text-xl font-bold text-white mb-2">Products</h2>
-                <a href="{{ route('ecommercesolution') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">E-commerce Solution</a>
-                <a href="{{ route('fooddelivery') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Food Delivery App </a>
-                <a href="{{ route('possoftware') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">POS Software</a>
+                <a href="{{ route('ecommercesolution') }}"
+                    class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">E-commerce Solution</a>
+                <a href="{{ route('fooddelivery') }}"
+                    class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Food Delivery App </a>
+                <a href="{{ route('possoftware') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">POS
+                    Software</a>
 
 
 
             </div>
             <div class="flex flex-col gap-2">
                 <h2 class="text-xl font-bold text-white mb-2">Company</h2>
-                <a href="{{ route('about') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">About Company</a>
+                <a href="{{ route('about') }}" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">About
+                    Company</a>
                 <a href="#" class="text-[#DBDBDB] hover:underline hover:text-[#CB513A]">Blog & News </a>
 
 
@@ -360,8 +392,10 @@
                 <p class="text-[#DBDBDB]">Follow our newsletter to stay updated about agency.</p>
 
                 <form action="" class="w-full flex items-center">
-                    <input type="text" placeholder="Email" class="w-[80%] py-2 px-4 bg-[#FFFFFF] rounded-l-md outline-none ">
-                    <button class="w-[20%] bg-[#F26822] py-3 rounded-r-md text-white cursor-pointer"><i class="fa-solid fa-paper-plane"></i></button>
+                    <input type="text" placeholder="Email"
+                        class="w-[80%] py-2 px-4 bg-[#FFFFFF] rounded-l-md outline-none ">
+                    <button class="w-[20%] bg-[#F26822] py-3 rounded-r-md text-white cursor-pointer"><i
+                            class="fa-solid fa-paper-plane"></i></button>
                 </form>
 
 
@@ -371,7 +405,7 @@
         </div>
 
         <div class="container mt-8 mx-auto px-4 flex sm:flex-row flex-col justify-between items-center">
-             <a href="{{ route('home') }}">
+            <a href="{{ route('home') }}">
                 <img src="{{ asset('assets/logo.png') }}" alt="Logo" class="h-12">
             </a>
             <p class="text-[#DBDBDB]">Copyright © 2025 Spire Technology LTd. All Rights Reserved.</p>

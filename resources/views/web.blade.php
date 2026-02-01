@@ -1,321 +1,290 @@
 @extends('masterlayout')
-@section('title', 'Web Development')
+@section('title', 'Spire Technology Limited-Web Development Services')
 
 @section('content')
 
-    {{-- header section start --}}
+{{-- header section start --}}
     <section class="w-full bg-[#531954] py-6">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-white">Web Development</h2>
+            <h2 class="text-4xl font-bold text-white">Web Development Services</h2>
         </div>
 
     </section>
     {{-- header section end --}}
 
-    {{-- about section start --}}
-    <section class="w-full py-[2rem]">
-        <div class="container mx-auto px-4 flex lg:flex-row flex-col gap-[5rem]">
-            <div class="lg:w-1/2 w-full">
-                <img src="{{ asset('assets/pic1-service1.png') }}" alt="Logo" class="w-full h-full">
+<!-- ================= HERO SECTION ================= -->
+<section class="bg-white py-28 relative overflow-hidden">
+    <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- LEFT CONTENT -->
+        <div>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-[#531954] mb-6">
+                Custom Web Development Services That Drive Results
+            </h1>
+
+            <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                Build scalable, high-performance websites tailored to your business goals.
+                From corporate sites to complex web applications, we deliver solutions
+                that engage users and convert visitors into customers.
+            </p>
+
+            <div class="flex gap-5 mb-8">
+                <button class="px-8 py-3 bg-[#531954] text-white font-bold rounded-lg shadow-lg hover:scale-105 transition">
+                    Get a Free Quote
+                </button>
+                <button class="px-8 py-3 border-2 border-[#531954] text-[#531954] font-bold rounded-lg hover:bg-[#531954] hover:text-white transition">
+                    View Our Work
+                </button>
             </div>
-            <div class="lg:w-1/2 w-full flex flex-col gap-2">
 
-                <span class="text-sm font-bold text-[#531954]">// about service</span>
-                <h2 class="text-3xl font-bold">We Provide Best</h2>
-                <h2 class="text-3xl font-bold">Web Development</h2>
+            <div class="flex gap-8 text-gray-600 font-medium">
+                <span>200+ Websites Built</span>
+                <span>98% Satisfaction</span>
+                <span>10+ Years</span>
+            </div>
+        </div>
 
-                <div class="w-full grid grid-cols-2 gap-4 mt-8">
-                    <div class="flex flex-col gap-3">
-                        <span class="text-sm font-bold text-[#7141B1]">01.</span>
-                        <h3 class="text-xl font-bold">Java Development</h3>
-                        <p class="text-base text-[#3D3D3D] leading-6">We’re committed to building sustainable and
-                            high-quality Java solutions.</p>
+        <!-- RIGHT IMAGE -->
+        <div class="relative">
+            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786"
+                 class="rounded-3xl shadow-2xl w-full"
+                 alt="Web Development">
+            <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-[#531954]/10 rounded-full blur-2xl"></div>
+        </div>
+    </div>
+</section>
 
-                    </div>
-                    <div class="flex flex-col gap-3">
-                        <span class="text-sm font-bold text-[#7141B1]">02.</span>
-                        <h3 class="text-xl font-bold">PHP Development</h3>
-                        <p class="text-base text-[#3D3D3D] leading-6">We’re committed to building sustainable and
-                            high-quality PHP solutions.</p>
+<!-- ================= INTRO ================= -->
+<section class="bg-gray-50 py-24">
+    <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
 
-                    </div>
-                    <div class="flex flex-col gap-3">
-                        <span class="text-sm font-bold text-[#7141B1]">03.</span>
-                        <h3 class="text-xl font-bold">C++ Development</h3>
-                        <p class="text-base text-[#3D3D3D] leading-6">We’re committed to building sustainable and
-                            high-quality C++ solutions.</p>
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+             class="rounded-3xl shadow-xl"
+             alt="Team Work">
 
-                    </div>
-                    <div class="flex flex-col gap-3">
-                        <span class="text-sm font-bold text-[#7141B1]">04.</span>
-                        <h3 class="text-xl font-bold">.NET Development</h3>
-                        <p class="text-base text-[#3D3D3D] leading-6">We’re committed to building sustainable and
-                            high-quality Qt solutions.</p>
+        <div>
+            <h2 class="text-4xl font-bold text-[#531954] mb-6">What We Do</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                As a leading web development agency, Spire Technology builds
+                custom websites combining modern UI design and robust backend
+                functionality.
+            </p>
+            <p class="mt-4 text-lg text-gray-700">
+                We don’t just build websites — we create digital experiences that
+                help businesses grow and scale confidently.
+            </p>
+        </div>
+    </div>
+</section>
 
-                    </div>
+<!-- ================= SERVICES ================= -->
+<section class="bg-white py-24">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-[#531954] text-center mb-16">
+            Web Development Services
+        </h2>
 
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            @foreach([
+                ['Corporate Websites','Professional brand-focused websites'],
+                ['E-Commerce Development','Secure, scalable online stores'],
+                ['Custom Web Applications','Tailored business solutions'],
+                ['WordPress Development','Flexible CMS-driven websites'],
+                ['Website Redesign','Modern UX & SEO-friendly updates'],
+                ['Landing Pages','High-converting marketing pages']
+            ] as $service)
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:-translate-y-2 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold text-[#531954] mb-3">{{ $service[0] }}</h3>
+                    <p class="text-gray-600">{{ $service[1] }}</p>
                 </div>
+            @endforeach
+        </div>
+    </div>
+</section>
 
 
+<!-- ================= TECHNOLOGIES WE USE ================= -->
+<section class="bg-white py-28">
+    <div class="container mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-20">
+            <h2 class="text-4xl font-extrabold text-[#531954] mb-4">
+                Technologies We Use
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We leverage modern, proven technologies to build fast, secure,
+                and scalable web solutions tailored to your business needs.
+            </p>
+        </div>
+
+        <!-- Tech Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- Frontend -->
+            <div class="group bg-gray-50 p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#531954]/10">
+                        <i class="fa-solid fa-code text-[#531954] text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#531954]">Frontend</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    React, Vue.js, Angular, Next.js, HTML5, CSS3, JavaScript
+                </p>
+            </div>
+
+            <!-- Backend -->
+            <div class="group bg-gray-50 p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#531954]/10">
+                        <i class="fa-solid fa-server text-[#531954] text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#531954]">Backend</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    Laravel, Node.js, PHP, Python, .NET, Ruby on Rails
+                </p>
+            </div>
+
+            <!-- CMS -->
+            <div class="group bg-gray-50 p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#531954]/10">
+                        <i class="fa-solid fa-layer-group text-[#531954] text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#531954]">CMS</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    WordPress, Shopify, Magento, Drupal, Headless CMS
+                </p>
+            </div>
+
+            <!-- Database -->
+            <div class="group bg-gray-50 p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#531954]/10">
+                        <i class="fa-solid fa-database text-[#531954] text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#531954]">Databases</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    MySQL, PostgreSQL, MongoDB, Firebase
+                </p>
+            </div>
+
+            <!-- Cloud -->
+            <div class="group bg-gray-50 p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#531954]/10">
+                        <i class="fa-solid fa-cloud text-[#531954] text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#531954]">Cloud & Hosting</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    AWS, Azure, Google Cloud, DigitalOcean, Vercel
+                </p>
+            </div>
+
+            <!-- DevOps -->
+            <div class="group bg-gray-50 p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#531954]/10">
+                        <i class="fa-solid fa-gears text-[#531954] text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#531954]">DevOps & Tools</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    Docker, GitHub, GitLab, CI/CD, Linux
+                </p>
             </div>
 
         </div>
+    </div>
+</section>
 
-    </section>
-    {{-- about section end --}}
 
-    <section class="w-full py-[2rem]">
-        <div class="container mx-auto px-4 flex lg:flex-row flex-col">
-            <div class="lg:w-1/2 w-full bg-[#211E3B] py-[2rem] flex justify-center items-center flex-col">
-                <div class="w-[70%]">
-                    <span class="text-base font-bold text-[#8E88B8]">// technology index</span>
-                    <h2 class="my-2 text-2xl font-bold text-white">We Organize Our Production Process</h2>
-                    <div class="flex gap-4 items-center mt-8">
-                        <span
-                            class="text-base text-white px-4 py-2 bg-[#F26822] hover:bg-[#531954] font-medium rounded-md">Analysis</span>
-                        <span
-                            class="text-base text-white px-4 py-2 bg-[#F26822] hover:bg-[#531954] font-medium rounded-md">Design</span>
-                        <span
-                            class="text-base text-white px-4 py-2 bg-[#F26822] hover:bg-[#531954] font-medium rounded-md">Testing</span>
+<!-- ================= PROCESS ================= -->
+<section class="bg-white py-24">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-[#531954] text-center mb-16">
+            Our Web Development Process
+        </h2>
 
-                    </div>
-
-                    <p class="text-white mt-4 leading-8">Engitech is the partner of choice for many of the world’s leading
-                        enterprises, SMEs and technology challengers. We help businesses elevate their value through custom
-                        software development, product design, QA and consultancy services. Our product design service lets
-                        you prototype, test and validate your ideas.</p>
+        <div class="grid md:grid-cols-3 gap-10">
+            @foreach([
+                'Discovery & Planning',
+                'Design & Prototyping',
+                'Development',
+                'Testing & QA',
+                'Launch & Deployment',
+                'Support & Maintenance'
+            ] as $step)
+                <div class="p-6 bg-gray-50 rounded-2xl shadow hover:shadow-xl transition text-center">
+                    <h3 class="text-xl font-bold text-[#531954] mb-2">{{ $step }}</h3>
+                    <p class="text-gray-600">
+                        Clear, structured workflow ensuring quality results.
+                    </p>
                 </div>
-
-
-            </div>
-            <div class="lg:w-1/2 w-full ">
-                <img src="{{ asset('assets/bg1-service1.jpg') }}" alt="Logo" class="w-full h-full">
-            </div>
-
-
+            @endforeach
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="bg-gray-50 py-24">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-[#531954] text-center mb-12">
+            Why Choose Us
+        </h2>
 
-    {{-- plane start  --}}
-    <section class="w-full my-[2rem]">
-        <div class="container mx-auto px-4 ">
-            <div class="flex flex-col gap-2 justify-center items-center">
-                <span class="text-[#531954] font-bold">// choose your plan</span>
-                <h2 class="text-4xl font-bold">Flexible Pricing Plans</h2>
-                <p class="text-base text-[#7a7a7a] text-center">We help businesses elevate their value through custom
-                    software development,<br>product design, QA and consultancy services.</p>
-
-            </div>
-
-            <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 mt-[5rem]">
-                <div
-                    class="group flex flex-col gap-4 p-8 bg-[#841A6A] relative transition-colors duration-300 hover:bg-white">
-
-                    <!-- Main Heading -->
-                    <span class="text-xl font-bold text-white transition-colors duration-300 group-hover:text-black">
-                        Basic Plan
-                    </span>
-                    <h3 class="text-5xl font-bold text-[#F26822]">$129.99</h3>
-                    <span class="text-[#ababab] mb-[30px] border-b border-[#aeaacb] pb-4 ">Monthly Package</span>
-
-                    <ul class="flex flex-col gap-4">
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class="font-medium">Web Counsulting</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class=" font-medium">24/7 System Monitoring</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class=" font-medium">Machine and Deep Learning</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#aeaacb]"><i class="fa-solid fa-check"></i></span>
-                            <p class="text-[#aeaacb] font-medium">Data Quality Management</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#aeaacb]"><i class="fa-solid fa-check"></i></span>
-                            <p class="text-[#aeaacb] font-medium">Security Management</p>
-                        </li>
-                    </ul>
-
-                    <span class="mt-4 flex gap-1 items-center text-[#f26822] text-base font-medium"><i
-                            class="fa-solid fa-arrow-right"></i>Choose Plane</span>
-
-                    <!-- Number -->
-                    <span class="text-[#812D834D] absolute top-[-2.5rem] left-0 text-[100px] font-bold">
-                        01
-                    </span>
-
-                    <!-- Icon Box -->
-                    <div
-                        class="w-[4.5rem] h-[4.5rem] absolute right-0 bottom-0 rounded-tl-full bg-[#332d5f] transition-colors duration-300 group-hover:bg-[#F26822] flex items-center justify-center">
-                        <i class="fa-solid fa-gear text-2xl text-white"></i>
-
-                    </div>
-
-                </div>
-                <div
-                    class="group flex flex-col  gap-4 p-8 bg-[#332d5f] relative transition-colors duration-300 hover:bg-white">
-
-                    <!-- Main Heading -->
-                    <span class="text-xl font-bold text-white transition-colors duration-300 group-hover:text-black">
-                        Economy Plan
-                    </span>
-                    <h3 class="text-5xl font-bold text-[#F26822]">$159.99</h3>
-                    <span class="text-[#ababab] mb-[30px] border-b border-[#aeaacb] pb-4 ">Monthly Package</span>
-
-                    <ul class="flex flex-col gap-4">
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class="font-medium">Web Counsulting</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class=" font-medium">24/7 System Monitoring</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class=" font-medium">Machine and Deep Learning</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class=" font-medium">Data Quality Management</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#aeaacb]"><i class="fa-solid fa-check"></i></span>
-                            <p class="text-[#aeaacb] font-medium">Security Management</p>
-                        </li>
-                    </ul>
-
-                    <span class="mt-4 flex gap-1 items-center text-[#f26822] text-base font-medium"><i
-                            class="fa-solid fa-arrow-right"></i>Choose Plane</span>
-
-                    <!-- Number -->
-                    <span class="text-[#812D834D] absolute top-[-2.5rem] left-0 text-[100px] font-bold">
-                        02
-                    </span>
-
-                    <!-- Icon Box -->
-                    <div
-                        class="w-[4.5rem] h-[4.5rem] absolute right-0 bottom-0 rounded-tl-full bg-[#262051] transition-colors duration-300 group-hover:bg-[#F26822] flex items-center justify-center">
-                        <i class="fa-solid fa-pen-nib text-2xl text-white"></i>
-
-
-                    </div>
-
-                </div>
-                <div
-                    class="group flex flex-col  gap-4 p-8 bg-[#332d5f] relative transition-colors duration-300 hover:bg-white">
-
-                    <!-- Main Heading -->
-                    <span class="text-xl font-bold text-white transition-colors duration-300 group-hover:text-black">
-                        Premium Plan
-                    </span>
-                    <h3 class="text-5xl font-bold text-[#F26822]">$189.99</h3>
-                    <span class="text-[#ababab] mb-[30px] border-b border-[#aeaacb] pb-4 ">Monthly Package</span>
-
-                    <ul class="flex flex-col gap-4">
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class="font-medium">Web Counsulting</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class=" font-medium">24/7 System Monitoring</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class=" font-medium">Machine and Deep Learning</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class=" font-medium">Data Quality Management</p>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#f26822]"><i class="fa-solid fa-check"></i></span>
-                            <p class=" font-medium">Security Management</p>
-                        </li>
-                    </ul>
-
-                    <span class="mt-4 flex gap-1 items-center text-[#f26822] text-base font-medium"><i
-                            class="fa-solid fa-arrow-right"></i>Choose Plane</span>
-
-                    <!-- Number -->
-                    <span class="text-[#812D834D] absolute top-[-2.5rem] left-0 text-[100px] font-bold">
-                        03
-                    </span>
-
-                    <!-- Icon Box -->
-                    <div class="w-[4.5rem] h-[4.5rem] absolute right-0 bottom-0 rounded-tl-full bg-[#262051] transition-colors duration-300 group-hover:bg-[#F26822] flex items-center justify-center">
-                        <i class="fa-solid fa-book-atlas text-2xl text-white"></i>
-
-
-                    </div>
-
-                </div>
-
-
-
-            </div>
-
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-gray-700">
+            <span>✔ Responsive Design</span>
+            <span>✔ SEO Optimized</span>
+            <span>✔ Fast Performance</span>
+            <span>✔ Secure Architecture</span>
+            <span>✔ Scalable Systems</span>
+            <span>✔ Clean Code</span>
+            <span>✔ Custom Features</span>
+            <span>✔ Ongoing Support</span>
         </div>
+    </div>
+</section>
 
-    </section>
-    {{-- plane end  --}}
+<!-- ================= FAQ ================= -->
+<section class="bg-gray-50 py-24">
+    <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-4xl font-bold text-[#531954] text-center mb-12">FAQ</h2>
 
-     <section class="w-full py-[3rem] bg-[url('assets/bg-maps-dots-alt.jpg')]">
-        <div class="container mx-auto px-4 flex flex-col gap-2 justify-center items-center">
-            <span class="text-base text-[#531954] font-medium">our clients</span>
-            <h2 class="text-center text-5xl font-bold ">We are Trusted<br />15+ Countries Worldwide</h2>
+        @foreach([
+            'How long does it take to develop a website?' => ' Timeline varies based on complexity. A basic website takes 4-6 weeks, while complex web applications may require 3-6 months. We provide detailed timelines during the planning phase.',
+            'Do you provide website maintenance after launch?' => 'Yes, we offer comprehensive maintenance packages including updates, security monitoring, backups, and technical support.',
+            'Will my website be mobile-friendly?' => 'Absolutely. All our websites are built with a mobile-first approach, ensuring perfect functionality across all devices and screen sizes.',
+            'Can you redesign my existing website?' => 'Yes, we specialize in website redesigns and migrations, preserving your SEO rankings while modernizing design and functionality.',
+            'What CMS do you recommend?' => 'We recommend based on your needs. WordPress for flexibility, Shopify for e-commerce, or custom solutions for unique requirements'
+        ] as $q => $a)
+        <details class="mb-4 bg-white p-6 rounded-xl shadow cursor-pointer">
+            <summary class="font-semibold text-[#531954]">{{ $q }}</summary>
+            <p class="mt-3 text-gray-600">{{ $a }}</p>
+        </details>
+        @endforeach
+    </div>
+</section>
 
-            <div class="mt-[3rem] w-full grid sm:grid-cols-2 gap-4">
-                {{-- card --}}
-                <div class="w-full p-[2rem] shadow-md rounded">
-                    <div class="flex gap-4">
-                        <img src="{{ asset('assets/client-2.png') }}" alt="team" class="w-[5rem]">
-                        <div class="flex flex-col ">
-                            <span class="text-[20px] font-bold mb-[2px]">Buzfi</span>
-                            <p class="text-[#9f9f9f]">COO of Buzfi.com</p>
+<!-- ================= CTA ================= -->
+<section class="bg-[#531954] py-24">
+    <div class="container mx-auto px-6 text-center text-white">
+        <h2 class="text-4xl font-bold mb-6">
+            Ready to Build Your Dream Website?
+        </h2>
+        <p class="text-lg mb-8 text-white/90">
+            Let’s create a powerful web solution that grows your business.
+        </p>
 
-                        </div>
-
-                    </div>
-
-                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
-                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
-                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
-                        part...always solving problems with great original ideas!." </p>
-
-                </div>
-                {{-- card --}}
-                <div class="w-full p-[2rem] shadow-md rounded">
-                    <div class="flex gap-4">
-                        <img src="{{ asset('assets/client-1.png') }}" alt="team" class="w-[5rem]">
-                        <div class="flex flex-col ">
-                            <span class="text-[20px] font-bold mb-[2px]">Buzfi Wholesale</span>
-                            <p class="text-[#9f9f9f]">CEO of Company</p>
-
-                        </div>
-
-                    </div>
-
-                    <p class="mt-[23px] text-[#9f9f9f] text-base leading-7">
-
-                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
-                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
-                        part...always solving problems with great original ideas!." </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
+        <button class="px-10 py-4 bg-white text-[#531954] font-bold rounded-lg shadow-lg hover:scale-105 transition">
+            Schedule Free Consultation
+        </button>
+    </div>
+</section>
 
 @endsection

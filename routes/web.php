@@ -12,6 +12,8 @@ Route::get('/about', [FrontendController::class, 'about'])->name('about');
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 Route::get('/project', [FrontendController::class, 'project'])->name('project');
 Route::get('/web', [FrontendController::class, 'web'])->name('web');
+Route::get('/marketing', [FrontendController::class, 'marketing'])->name('marketing');
+Route::get('/softerware', [FrontendController::class, 'softerware'])->name('softerware');
 Route::get('/mobile', [FrontendController::class, 'mobile'])->name('mobile');
 Route::get('/e-commerce-solution', [FrontendController::class, 'ecommercesolution'])->name('ecommercesolution');
 Route::get('/food-delivery-app', [FrontendController::class, 'fooddelivery'])->name('fooddelivery');

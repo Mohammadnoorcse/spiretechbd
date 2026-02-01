@@ -23,11 +23,17 @@ class FrontendController extends Controller
     public function web(){
         return view('web');
     }
+    public function marketing(){
+        return view('marketing');
+    }
     public function mobile(){
         return view('mobile');
     }
     public function ecommercesolution(){
         return view('ecommerce-solution');
+    }
+    public function softerware(){
+        return view('softerware');
     }
     public function fooddelivery(){
         return view('Food-delivery');

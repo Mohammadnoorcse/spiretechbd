@@ -1,6 +1,28 @@
 @extends('masterlayout')
-@section('title', 'Spire Technology Limited')
+@section('title', 'home')
+@push('seo')
+    <!-- Meta SEO -->
+    <meta name="description"
+        content="Explore Spire Technology Limited's latest projects in design, development, and technology. Innovative solutions tailored for your business needs.">
+    <meta name="keywords"
+        content="Spire Technology, IT projects, software development, technology solutions, web design, app development">
+    <link rel="canonical" href="{{ url()->current() }}" />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projects | Spire Technology Limited">
+    <meta property="og:description"
+        content="Explore Spire Technology Limited's latest projects in design, development, and technology.">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('assets/image-box1.jpg') }}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | Spire Technology Limited">
+    <meta name="twitter:description"
+        content="Explore Spire Technology Limited's latest projects in design, development, and technology.">
+    <meta name="twitter:image" content="{{ asset('assets/image-box1.jpg') }}">
+@endpush
 @push('css')
     @push('css')
         <style>
@@ -26,7 +48,7 @@
 @section('content')
 
 
-    <section class="w-full bg-[#7b3b7b]">
+    <section class="w-full bg-gradient-to-r from-[#841A6A] via-[#9A2B7A] to-[#B13C8A]">
         <div class="container mx-auto px-4 py-[4rem] flex lg:flex-row flex-col gap-6">
 
             <div class="lg:w-1/2 w-full flex flex-col gap-4">
@@ -44,7 +66,7 @@
                     landscape.
                 </p>
 
-                <a href="{{ route('contact') }}"
+                <button
                     class="group relative overflow-hidden w-fit py-3 px-8 text-xl font-bold
     bg-white text-[#902373] shadow-lg shadow-amber-500 rounded-lg
     transition-all duration-500
@@ -66,7 +88,7 @@
                             Request a Quote
                         </span>
                     </span>
-                </a>
+                </button>
 
 
 
@@ -403,8 +425,8 @@
                     data-aos="zoom-in" data-aos-offset="200">
 
                     <!-- Project Image -->
-                    <img src="{{ asset('assets/buzfi.webp') }}" alt="Project 1" class="w-full h-64 object-cover">
-
+                    <img src="https://www.bdtask.com/blog/uploads/ecommerce_business_in_bangladesh.jpg" alt="Project 1"
+                        class="w-full h-64 object-cover">
 
                     <!-- Hover Overlay -->
                     <div
@@ -412,7 +434,7 @@
                         <h3 class="text-2xl font-bold text-white mb-2">E-Commerce Website</h3>
                         <p class="text-white/80 mb-4 text-sm">Responsive online store with seamless payment & inventory
                             management.</p>
-                        <a href="https://buzfi.com/" target="_blank"
+                        <a href="#"
                             class="inline-block text-center bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full font-medium text-sm animate-pulse transition">View
                             Project</a>
                     </div>
@@ -422,13 +444,14 @@
                 <!-- Project Card 2 -->
                 <div class="project-card relative group rounded-3xl overflow-hidden shadow-2xl transform transition duration-500 hover:scale-105 hover:-translate-y-3 hover:shadow-purple-600/50 will-change-transform"
                     data-aos="zoom-in" data-aos-offset="200" data-aos-delay="100">
-                    <img src="{{ asset('assets/dailysanglap.webp') }}" alt="Project 2" class="w-full h-64 object-cover">
+                    <img src="https://6valley.app/wp-content/uploads/2024/03/best-ecommerce-cms-platforms-to-build-your-online-store.png"
+                        alt="Project 2" class="w-full h-64 object-cover">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-6">
-                        <h3 class="text-2xl font-bold text-white mb-2">News paper</h3>
-                        <p class="text-white/80 mb-4 text-sm">A modern newspaper website delivering real-time news,
-                            articles, and updates with a clean, reader-friendly layout</p>
-                        <a href="https://dailysonglap.com/" target="_blank"
+                        <h3 class="text-2xl font-bold text-white mb-2">Mobile App Design</h3>
+                        <p class="text-white/80 mb-4 text-sm">Intuitive iOS & Android app design with smooth UX
+                            interactions.</p>
+                        <a href="#"
                             class="inline-block text-center bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full font-medium text-sm animate-pulse transition">View
                             Project</a>
                     </div>
@@ -437,12 +460,12 @@
                 <!-- Project Card 3 -->
                 <div class="project-card relative group rounded-3xl overflow-hidden shadow-2xl transform transition duration-500 hover:scale-105 hover:-translate-y-3 hover:shadow-purple-600/50 will-change-transform"
                     data-aos="zoom-in" data-aos-offset="200" data-aos-delay="200">
-                    <img src="{{ asset('assets/roshniworld.webp') }}" alt="Project 3" class="w-full h-64 object-cover">
+                    <img src="https://cdn.amasty.com/media/amasty/blog/cache/b/e/915/433/best_e-commerce_platforms_1_.png"
+                        alt="Project 3" class="w-full h-64 object-cover">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-6">
-                        <h3 class="text-2xl font-bold text-white mb-2">Fashion World</h3>
-                        <p class="text-white/80 mb-4 text-sm">Roshni Fashion World is an online fashion store offering
-                            trendy clothing with a smooth and secure shopping experience</p>
+                        <h3 class="text-2xl font-bold text-white mb-2">Corporate Portal</h3>
+                        <p class="text-white/80 mb-4 text-sm">Custom portal for internal workflows and collaboration.</p>
                         <a href="#"
                             class="inline-block text-center bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full font-medium text-sm animate-pulse transition">View
                             Project</a>
@@ -452,14 +475,14 @@
                 <!-- Project Card 4 -->
                 <div class="project-card relative group rounded-3xl overflow-hidden shadow-2xl transform transition duration-500 hover:scale-105 hover:-translate-y-3 hover:shadow-purple-600/50 will-change-transform"
                     data-aos="zoom-in" data-aos-offset="200" data-aos-delay="300">
-                    <img src="{{ asset('assets/office_mangement.webp') }}" alt="Project 4"
-                        class="w-full h-64 object-cover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfIJhwWdB75zoqGC35cywlLGiFhaaJW8eOvQ&s"
+                        alt="Project 4" class="w-full h-64 object-cover">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-6">
-                        <h3 class="text-2xl font-bold text-white mb-2">Office management system</h3>
-                        <p class="text-white/80 mb-4 text-sm">Smart office management software that improves productivity
-                            through centralized control and automation.</p>
-                        <a href="https://officespiretech.com/" target="_blank"
+                        <h3 class="text-2xl font-bold text-white mb-2">Digital Marketing Campaign</h3>
+                        <p class="text-white/80 mb-4 text-sm">Creative social media and PPC campaigns delivering measurable
+                            ROI.</p>
+                        <a href="#"
                             class="inline-block text-center bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full font-medium text-sm animate-pulse transition">View
                             Project</a>
                     </div>
@@ -468,13 +491,13 @@
                 <!-- Project Card 5 -->
                 <div class="project-card relative group rounded-3xl overflow-hidden shadow-2xl transform transition duration-500 hover:scale-105 hover:-translate-y-3 hover:shadow-purple-600/50 will-change-transform"
                     data-aos="zoom-in" data-aos-offset="200" data-aos-delay="400">
-                    <img src="{{ asset('assets/allbrids.webp') }}" alt="Project 5" class="w-full h-64 object-cover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7YLDQPZsQ6Q9UCeTqwlXhPR-I1qE-l-q5ag&s"
+                        alt="Project 5" class="w-full h-64 object-cover">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-6">
-                        <h3 class="text-2xl font-bold text-white mb-2">Allbirds – Sustainable Fashion Shoes</h3>
-                        <p class="text-white/80 mb-4 text-sm">A modern shoe fashion platform showcasing Allbirds inspired
-                            footwear with smooth online shopping.</p>
-                        <a href="https://allbirddemo.vercel.app/" target="_blank"
+                        <h3 class="text-2xl font-bold text-white mb-2">SEO Optimization</h3>
+                        <p class="text-white/80 mb-4 text-sm">Boost organic traffic and improve search engine ranking.</p>
+                        <a href="#"
                             class="inline-block text-center bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full font-medium text-sm animate-pulse transition">View
                             Project</a>
                     </div>
@@ -483,14 +506,14 @@
                 <!-- Project Card 6 -->
                 <div class="project-card relative group rounded-3xl overflow-hidden shadow-2xl transform transition duration-500 hover:scale-105 hover:-translate-y-3 hover:shadow-purple-600/50 will-change-transform"
                     data-aos="zoom-in" data-aos-offset="200" data-aos-delay="500">
-                    <img src="{{ asset('assets/ayeshamonir.webp') }}" alt="Project 6" class="w-full h-64 object-cover">
+                    <img src="https://upthrust.eu/wp-content/uploads/2023/08/ecommerce-mcommerce-featured-image-5fd09a3a5ff2a.png"
+                        alt="Project 6" class="w-full h-64 object-cover">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-6">
-                        <h3 class="text-2xl font-bold text-white mb-2">Ayesha Monir Fashion House</h3>
-                        <p class="text-white/80 mb-4 text-sm">Trendy and timeless fashion collections designed for everyday
-                            and special wear.
+                        <h3 class="text-2xl font-bold text-white mb-2">Custom Software</h3>
+                        <p class="text-white/80 mb-4 text-sm">Scalable software solutions to streamline business processes.
                         </p>
-                        <a href="https://www.ayeshamonir.com/" target="_blank"
+                        <a href="#"
                             class="inline-block text-center bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full font-medium text-sm animate-pulse transition">View
                             Project</a>
                     </div>
@@ -728,7 +751,7 @@
 
     {{-- Team Section --}}
 
-    <section class="relative w-full bg-[url('/assets/group-1.webp')] bg-cover bg-center py-28 overflow-hidden">
+    <section class="relative w-full bg-[url('/assets/bg-tech-home1.jpg')] bg-cover bg-center py-28 overflow-hidden">
         <!-- Floating particles / subtle background animation -->
         <div class="absolute inset-0">
             <canvas id="particles-canvas" class="w-full h-full"></canvas>
@@ -766,21 +789,6 @@
                 </div>
 
                 <!-- Team Member 2 -->
-                <div class="team-card relative group rounded-3xl overflow-hidden p-8 bg-white/10 border border-white backdrop-blur-md transform transition duration-500 hover:scale-105 hover:-translate-y-4 hover:shadow-2xl will-change-transform cursor-pointer"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <img src="{{ asset('assets/team-5.webp') }}" alt="Web Developer"
-                        class="w-24 mx-auto rounded-full border-4 border-gradient-to-r from-purple-400 via-pink-500 to-orange-400 p-1">
-                    <span
-                        class="block mt-4 text-xl font-bold text-white uppercase transition group-hover:text-[#BE532F] text-center">Director</span>
-                    <div
-                        class="flex justify-center gap-4 mt-3 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                        <a href="#" class="text-white hover:text-[#BE532F] text-lg"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-white hover:text-[#BE532F] text-lg"><i
-                                class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <!-- Team Member 3 -->
                 <div class="team-card relative group rounded-3xl overflow-hidden p-8 bg-white/10 border border-white backdrop-blur-md transform transition duration-500 hover:scale-105 hover:-translate-y-4 hover:shadow-2xl will-change-transform cursor-pointer"
                     data-aos="fade-up" data-aos-delay="100">
                     <img src="{{ asset('assets/team-4.png') }}" alt="Web Developer"
@@ -900,16 +908,15 @@
     <section class="w-full py-12 bg-gray-50">
         <div class="container mx-auto px-4 flex flex-col gap-4 items-center">
             <span class="text-base text-[#531954] font-medium uppercase">Our Clients</span>
-            <h2 class="text-center text-3xl sm:text-4xl md:text-5xl font-bold">
+            <h2 class="text-center text-4xl md:text-5xl font-bold">
                 We are Trusted <br />
                 in 15+ Countries Worldwide
             </h2>
 
-            <!-- Grid -->
-            <div class="mt-12 w-full grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-
+            <!-- Carousel -->
+            <div class="mt-12 w-full flex overflow-x-auto space-x-6 scrollbar-hide">
                 <!-- Card Example -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex-shrink-0 w-80 bg-white p-6 rounded-lg shadow-md">
                     <div class="flex items-center gap-4">
                         <img src="assets/client-1.png" alt="Client Logo" class="w-14 h-14 object-contain">
                         <div>
@@ -924,7 +931,8 @@
                     </p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-md">
+                <!-- Duplicate Cards -->
+                <div class="flex-shrink-0 w-80 bg-white p-6 rounded-lg shadow-md">
                     <div class="flex items-center gap-4">
                         <img src="assets/client-2.png" alt="Client Logo" class="w-14 h-14 object-contain">
                         <div>
@@ -933,13 +941,14 @@
                         </div>
                     </div>
                     <p class="mt-4 text-gray-500 text-base leading-7">
-                        "A reliable partner with strong technical expertise. From planning to execution,
-                        everything was structured and transparent. We truly appreciate their dedication
-                        and attention to detail."
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
                     </p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-md">
+                <!-- Add more cards as needed -->
+                <div class="flex-shrink-0 w-80 bg-white p-6 rounded-lg shadow-md">
                     <div class="flex items-center gap-4">
                         <img src="assets/client-3.png" alt="Client Logo" class="w-14 h-14 object-contain">
                         <div>
@@ -948,32 +957,14 @@
                         </div>
                     </div>
                     <p class="mt-4 text-gray-500 text-base leading-7">
-                        "They understood our business needs perfectly and delivered a clean, user-friendly
-                        solution. The support and guidance throughout the project made the entire process
-                        stress-free."
+                        "Very well thought out and articulate communication. Clear milestones, deadlines and fast work.
+                        Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best
+                        part...always solving problems with great original ideas!"
                     </p>
                 </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center gap-4">
-                        <img src="assets/client-4.png" alt="Client Logo" class="w-14 h-14 object-contain">
-                        <div>
-                            <h3 class="text-lg font-bold">Daily Sanglap</h3>
-                            <p class="text-gray-400 text-sm">Client of Company</p>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-gray-500 text-base leading-7">
-                        "Their team perfectly captured the essence of our news portal. From design to functionality,
-                        everything was seamless, fast, and user-friendly. The end result elevated our reader experience
-                        and helped us engage audiences more effectively."
-                    </p>
-                </div>
-
             </div>
         </div>
     </section>
-
-
 
 
 

@@ -1,5 +1,5 @@
 @extends('masterlayout')
-@section('title', 'Mobile App Development')
+@section('title', 'Spire Technology Limited-Mobile App Development')
 
 @push('css')
     <style>
@@ -97,7 +97,7 @@
                             <p class="text-[#54595F]">80% of time users spend in social<br> media from their mobile devices.</p>
 
                         </div>
-                        
+
 
                     </div>
                     <div class="flex gap-4">
@@ -107,7 +107,7 @@
                             <p class="text-[#54595F]">65% of sales representatives have<br> achieved their quotas by adopting.</p>
 
                         </div>
-                        
+
 
                     </div>
                     <div class="flex gap-4">
@@ -117,11 +117,11 @@
                             <p class="text-[#54595F]">We provide top-tier mobile app<br>development services for brokers.</p>
 
                         </div>
-                        
+
 
                     </div>
-          
-                    
+
+
                 </div>
 
             </div>
@@ -143,7 +143,7 @@
                 <h3 class="text-3xl font-bold mt-2">Countries Worldwide</h3>
                 <p class="mt-4 text-[#333] leading-8">To succeed, every software solution must be deeply integrated into the existing tech environment...</p>
                </div>
-                
+
             </div>
             <div class="w-full h-full lg:order-3 sm:order-4 order-3">
                 <img src="{{ asset('assets/fun-fact2.jpg') }}" alt="team" class="w-full h-full">
@@ -154,7 +154,7 @@
                 <h3 class="text-3xl font-bold mt-2">Happy Customers</h3>
                 <p class="mt-4 text-[#333] leading-8">To succeed, every software solution must be deeply integrated into the existing tech environment...</p>
                </div>
-                
+
             </div>
 
         </div>
@@ -167,7 +167,7 @@
     <section class="w-full py-[3rem]">
         <div class="container mx-auto px-4">
             <div class="flex md:flex-row flex-col gap-[3rem] items-center">
-               
+
                 <div class="md:w-1/2 w-full flex gap-4 md:mt-0 mt-[2rem]">
                    <img src="{{ asset('assets/apple-w.png') }}" alt="team" class="w-full h-full">
 
@@ -390,7 +390,7 @@
 
     </section>
     {{-- plane end  --}}
-    
+
 @endsection
 
 <script>

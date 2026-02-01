@@ -1,5 +1,5 @@
 @extends('masterlayout')
-@section('title', 'about')
+@section('title', 'Spire Technology Limited-About')
 
 @push('css')
     <style>
@@ -161,7 +161,7 @@
                 <span class="text-base font-bold text-white">What We Want To DO</span>
                 <h2 class="text-5xl font-bold text-white mt-1">Our Vision</h2>
                 <p class="text-base text-white mt-[2rem]">Our organization is built on a vision of global impact, breaking down geographical barriers. Our goal is to establish ourselves as a reliable name in the tech world, known for providing innovative solutions to real-world problems.</p>
-                
+
                 <h2 class="text-5xl font-bold text-white my-[2rem]">Our Mission</h2>
                 <p class="text-base text-white mt-[2rem]">We know our mission: to use our unique and flexible methods, we try to make people’s lives simpler, more productive and more fulfilling. Through our services, products, or platforms, we are committed to</p>
 
@@ -170,7 +170,7 @@
                     <li>Making it affordable and accessible for everyone</li>
                     <li>Developing trust with customers and partners and driving sustainable growth with them.</li>
                 </ul>
-            
+
             </div>
 
 
